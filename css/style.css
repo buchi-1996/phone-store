@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic:400,500,900|Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Livvic, sans-serif;
+}
+
+a:hover{
+    color: #333 ;
+    text-decoration: none;
+}
+:root{
+    --primary-color: #17a2b8;
+    --secondary-color: #ffc107;
+    --main-balck: #282828;
+    --main-white: #fff;
+    --fake-white: #ccc;
+}
+
+header{
+    background: url(../img/svgs.svg) top/cover no-repeat;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 0 25px;
+    color: var(--primary-color);
+}
+
+
+
+nav .troley{
+    position: relative;
+}
+
+nav .order-count{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    font-size: 12px;
+    background: #444;
+    padding: 3px 3px 2px;
+    border-radius: 10px;
+    color: var(--main-white);
+}
+
+header #search-box{
+    position: relative;
+    border: 1px solid var(--fake-white);
+    outline: none !important;
+    box-shadow: 0 0 0.2em 1px var(--fake-white);
+}
+
+.bottom-nav{
+    position: relative;
+    background: var(--main-balck);
+    padding: 0px 20px;
+    height: 50px;
+    line-height: 3;
+}
+.bottom-nav ul{
+    display: flex;
+}
+
+.bottom-nav ul li{
+    list-style: none;
+}
+
+.bottom-nav ul li a{
+    text-decoration: none;
+    color: var(--main-white);
+    text-transform: uppercase;
+    padding: 0 30px;
+    
+}
+
+.bottom-nav .toggle{
+    background: #333;
+    color: var(--main-white);
+    height: 30px;
+    padding: 3px 6px;
+    margin-top: 10px;
+    line-height: 1.5;
+    border-radius: 4px;
+    display: none;
+    cursor: pointer;
+    
+}
+
+.bottom-nav .search-box-hidden{
+    display: none;
+}
+
+
+.showcase .container-fluid{
+    position: relative;
+    width: 100%;
+}
+
+ .owl-carousel{
+    position: relative;
+}
+
+.owl-carousel .item{
+   height: 720px;
+   margin-bottom: 0 !important;
+}
+
+.owl-carousel .item img{
+    height: 720px;
+}
+
+.owl-carousel .owl-stage{
+    margin-bottom: -10px !important;
+}
+
+.owl-carousel .item-caption{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    color: var(--main-white);
+   
+}
+
+
+
+.item-caption h4{
+    font-size: 25px;
+}
+
+.item-caption h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.item-caption p{
+    font-size: 15px;
+}
+
+
+.owl-carousel .owl-prev{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    outline: none;
+}
+
+.fa-angle-left,
+.fa-angle-right{
+    color: var(--secondary-color);
+}
+
+.owl-carousel .owl-next{
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    outline: none;
+}
+
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    right: 45%;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background:var(--primary-color);
+}
+
+.owl-theme .owl-dot:hover span{
+    background: var(--primary-color);
+}
+
+.owl-theme .owl-dot:active{
+    background: var(--main-white);
+}
+
+
+
+
+/* latest products================
+===========================*/
+.products .details h4{
+    font-size: 15px;
+}
+
+.products .card{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.products  .details{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.products .item{
+    height: 500px;
+}
+
+.products .item img{
+    height: 350px;
+}
+
+
+
+
+/* ============================
+    offers
+====================================*/
+.offers h4{
+    margin-bottom: 0 !important;
+}
+
+
+
+/* =========================
+    in stock
+===========================*/
+
+.in-stock .card-body h4{
+    font-size: 15px;
+}
+
+.in-stock ul li{
+    list-style: none;
+}
+
+.in-stock ul li a{
+    border-radius: 34px !important;
+    padding: 5px 38px !important;
+    margin: 5px 15px;
+    color: var(--main-balck) !important;
+    background: var(--main-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none !important;
+    box-shadow: 0 0 1em var(--fake-white);
+}
+
+.in-stock ul li a:hover{
+    background: var(--main-white) !important;
+    color: var(--main-balck) !important;
+}
+
+.in-stock .card{
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.in-stock .card .img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.in-stock .img-container img{
+    transition: all 600ms ease-in;
+}
+
+.in-stock .img-container:hover img{
+    transform: scale(1.2);
+}
+
+.in-stock .img-container .icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    padding: 10px;
+    border-top-left-radius: 15px;
+    transform: translate(90%, 90%);
+    transition: all 600ms ease-in;
+}
+
+.in-stock .img-container:hover .icon{
+    transform: translate(0, 0);
+}
+
+.in-stock .img-container .icon:hover i{
+    color: var(--main-white);
+    transform: rotate(360deg);
+}
+
+.in-stock .icon i{
+    font-size: 19px;
+    transition: all 500ms ease-in;
+}
+
+.in-stock  .card-body{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 15px 10px;
+    
+}
+
+.in-stock .card-body p{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.in-stock .load-more a{
+    border-radius: 30px !important;
+    padding: 10px 30px;
+    transition: all 0.5s ease;
+}
+
+.in-stock .load-more a:hover{
+   background: var(--secondary-color);
+   color: var(--main-white);
+}
+
+/* ads banner============ */
+.ads-banner .banner{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(68, 68, 68, 0.034), rgba(68, 68, 68, 0.541)), url(../img/markus-winkler-4TBdESUNuFg-unsplash.jpg) center/cover no-repeat;
+    color: var(--main-white);
+    font-size: 34px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.ads-banner .banner h4{
+    font-size: 40px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --medium phone screen----------- */
+
+@media screen and (max-width: 768px){
+    .owl-carousel .owl-prev, .owl-carousel .owl-next{
+        top: 60%;
+    }
+
+    .owl-carousel .owl-prev{
+        font-size: 10px !important;
+       
+    }
+
+    .owl-carousel .owl-next{
+        font-size: 10px !important;
+    }
+
+    .owl-carousel .item-caption{
+        position: absolute;
+        top: 20%;
+        margin-left: -35px ;
+    }
+
+    .owl-carousel .item-caption h2{
+        font-size: 45px;
+    }
+
+    .offers h4{
+        font-size: 19px;
+    }
+
+    .offers i{
+        font-size: 29px;
+        margin-top: 10px;
+    }
+
+    .products .card{
+        height: 350px;
+    }
+
+    .products .item img{
+        height: 350px;
+    }
+
+    
+    
+}
+
+
+
+
+/* small pnone screen sizes---------------- */
+
+@media screen and (max-width: 640px){
+    nav .search-box{
+        display: none;
+    }
+    header .logo h3{
+        font-size: 28px;
+    }
+
+    .bottom-nav{
+        position: relative;
+    }
+
+    .bottom-nav .menu{
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        width: 100%;
+        background: var(--main-balck);
+        margin-top: 100px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+        transition: all 300ms ease-in-out;
+    }
+
+    .bottom-nav .search-box-hidden{
+        display: block;
+        padding: 20px 0;
+    }
+    
+
+    .menu.show{
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .bottom-nav ul{
+        display: block;
+        padding: 0 24px 10px;
+    }
+
+    .bottom-nav ul li a{
+        display: block;
+        font-weight: normal;
+
+    }
+
+    .bottom-nav ul li a:hover{
+        background: goldenrod;
+    }
+
+    .bottom-nav .toggle{
+        display: block;
+        
+    }
+
+    .ads-banner .banner{
+        font-size: 20px;
+    }
+
+    .ads-banner .banner h4{
+        font-size: 30px;
+    }
+}
+
+/* tablet sizes */
+@media screen and (max-width: 980px){
+    
+    .products .card{
+        height: 400px;
+    }
+
+    .products .item img{
+        height: 400px;
+    }
+
+    .ads-banner .banner {
+        font-size: 25px;
+    }
+}
+ 
+ /* laptop screen sizes------------- */
+
+@media screen and (max-width: 1024px){
+    .products .card{
+        height: 400px;
+    }
+
+    .products .item img{
+        height: 400px;
+    }
+
+}
