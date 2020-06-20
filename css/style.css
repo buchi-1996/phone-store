@@ -480,6 +480,7 @@ header #search-box{
         border-radius: 34px !important;
         padding: 3px 20px !important;
         margin: 3px 10px;
+        border-radius: 5px !important;
         
     }
     .in-stock .card-body h4{
