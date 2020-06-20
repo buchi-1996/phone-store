@@ -476,6 +476,12 @@ header #search-box{
         
     }
 
+    .in-stock ul li a{
+        border-radius: 34px !important;
+        padding: 3px 20px !important;
+        margin: 3px 10px;
+        
+    }
     .in-stock .card-body h4{
         font-size: 11px;
     }
