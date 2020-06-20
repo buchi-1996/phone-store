@@ -476,6 +476,10 @@ header #search-box{
         
     }
 
+    .in-stock .card-body h4{
+        font-size: 11px;
+    }
+
     .ads-banner .banner{
         font-size: 20px;
     }
